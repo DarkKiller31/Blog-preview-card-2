@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+  box-sizing: border-box;
+}
+h1, h2, h3, h6, p, ul,hr {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+}
+body {
+  margin: 0;
+  background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 16px;
+  font-weight: 500;
+}
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 384px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 16px 16px;
+}
+.card__img {
+  margin-top: 24px;
+  border-radius: 10px;
+  height: 200px;
+}
+.text__content {
+  display: flex;
+  flex-direction: column;
+  width: 336px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  gap: 12px;
+}
+.text__bottom {
+  background-color: hsl(47, 88%, 63%);
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 4px 12px;
+  display: inline;
+}
+.text__publication {
+  font-size: 14px;
+  font-weight: 500;
+}
+.text__title {
+  font-size: 24px;
+  font-weight: 800;
+  cursor: pointer;
+  &:hover {
+    color: hsl(47, 88%, 63%);
+  }
+}
+.text__text {
+  color: hsl(0, 0%, 50%);
+}
+.profile__content {
+  width: 336px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.profile__img {
+  width: 32px;
+}
+.profile__name {
+  font-size: 14px;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 15px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (max-width: 576px) {
+  .card {
+    width: 327px;
+    box-shadow: 8px 8px;
+  }
+  .card__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 279px;
+    overflow: hidden;
+  }
+  .text__content {
+    width: 279px;
+  }
+  .text__bottom {
+    font-size: 12px;
+  }
+  .text__publication {
+    font-size: 12px;
+  }
+  .text__title {
+    font-size: 20px;
+  }
+  .profile__content {
+    width: 279px;
+  }
+  .text__text {
+    font-size: 14px;
+  }
+}
